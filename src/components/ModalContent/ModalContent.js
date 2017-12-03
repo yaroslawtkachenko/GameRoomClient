@@ -1,7 +1,7 @@
 import {games} from '../../../__mocks__/gameDataMock';
 import PropTypes from 'prop-types';
 import React from 'react';
-
+import './ModalContent.scss';
 class ModalContent extends React.Component{
     constructor (props){
         super(props);
@@ -15,6 +15,7 @@ class ModalContent extends React.Component{
         }
         return (
             <div className='modal-content'>
+                <div className='mod-panel1'>
                 <div className='game-info'>
                     <img src={this.props.image}/>
                     <h3>{this.props.title}</h3>
@@ -23,6 +24,8 @@ class ModalContent extends React.Component{
                     <h3>Host:</h3>
                     <h3>{this.props.host}</h3>
                 </div>
+                </div>
+                <div className='mod-panel2'>
                 <div className='game-settings'>
                     <h3>Game settings:</h3>
                     <div className='playercount'>
@@ -30,6 +33,7 @@ class ModalContent extends React.Component{
                             <input type="radio"  placeholder={player} name="322"/>
                         )}
                     </div>
+                    <hr></hr>
                 </div>
                 <div className='game-info-'>
                     <h3>Players:</h3>
@@ -38,6 +42,7 @@ class ModalContent extends React.Component{
                             <h4>{players}</h4>
                         )}
                     </div>
+                </div>
                 </div>
                 <div className='modalButtons'>
                     <input type="button" value="Start Game"/>
