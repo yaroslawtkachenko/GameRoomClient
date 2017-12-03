@@ -9,7 +9,6 @@ class GameRoom extends Component {
     render () {
         return (
                 <div className='game-room'>
-                    <h1>Game Rooms</h1>
                     <div className='rooms'>
                         {this.props.rooms.map((room) =>
                             <Room {...room}/>

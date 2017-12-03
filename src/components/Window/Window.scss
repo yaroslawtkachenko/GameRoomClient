@@ -2,11 +2,24 @@
     display: flex;
     justify-content: space-between;
     background-color: darkcyan;
+    flex-direction: row;
     .left-area {
         flex-direction: column;
         display: block;
         justify-content: space-between;
-        width: 30%;
+        width: 25%;
         border: 3px black solid;
+    }
+    .center-area{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+        border: 3px black solid;
+    }
+    .right-area{
+        flex-direction: column;
+        justify-content: space-between;
+        border: 3px black solid;
+        background: #F5DEB3;
     }
 }

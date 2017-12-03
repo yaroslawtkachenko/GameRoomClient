@@ -17,7 +17,9 @@ class Info extends React.Component {
                     <Tab>Top Players</Tab>
                 </TabList>
                 <TabPanel>
-                    <h1>1</h1>
+                    <div className='players'>
+                        <strong>Name:Status:</strong>
+                    </div>
                 </TabPanel>
                 <TabPanel>
                     <h1>2</h1>

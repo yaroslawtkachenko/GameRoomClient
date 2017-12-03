@@ -7,6 +7,8 @@ import Info from '../LeftArea/Info';
 import {rooms} from '../../../__mocks__/roomDataMock';
 import User from '../LeftArea/User';
 import {userData} from '../../../__mocks__/userDataMock';
+import GameHead from '../GameRoom/GameHead';
+import AvalGame from '../Games/AvalGame';
 
 class Window extends Component {
     constructor (props) {
@@ -18,10 +20,17 @@ class Window extends Component {
                 <div className='window'>
                     <div className='left-area'>
                         <div> <User {...userData}/> </div>
-                        <div> </div><Info/>
+                        <div><Info/> </div>
                     </div>
-                    <GameRoom rooms={rooms}/>
-                    <Games games={games}/>
+                    <div className='center-area'>
+                        <div><GameHead/></div>
+                        <div><GameRoom rooms={rooms}/></div>
+                    </div>
+
+                    <div className='right-area'>
+                        <div><AvalGame/></div>
+                        <div><Games games={games}/></div>
+                    </div>
                 </div>
             </div>
         );

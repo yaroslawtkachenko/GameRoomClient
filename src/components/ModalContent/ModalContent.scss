@@ -1,6 +1,23 @@
 .modal-content{
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.game-info{
+
+.mod-panel1{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mod-panel2{
   border: 1px solid black;
+}
+
+
+.game-info{
+  text-align: center;
+}
+
+.host-info{
+
 }

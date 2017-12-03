@@ -9,7 +9,6 @@ class Games extends Component {
     render () {
         return (
             <div className='games'>
-                <h1>Games</h1>
                 {this.props.games.map((game) =>
                     <Game {...game}/>
                 )}
